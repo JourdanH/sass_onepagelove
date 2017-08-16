@@ -1,0 +1,24 @@
+header {
+  height: 160px;
+  padding-left: 60px;
+  line-height: 26px;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+
+  h1 {
+    color: #ec7471;
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: normal;
+    font-size: 16px;
+    color: lightgray;
+    font-style: italic;
+    font-family: 'Droid Serif', serif;
+  }
+}

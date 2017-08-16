@@ -1,0 +1,108 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  height: 160px;
+  padding-left: 60px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  header h1, header .eggcarton h3, .eggcarton header h3 {
+    color: #ec7471;
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 8px; }
+  header h2 {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: normal;
+    font-size: 16px;
+    color: lightgray;
+    font-style: italic;
+    font-family: 'Droid Serif', serif; }
+
+p {
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  padding: 0 3rem 2rem 3rem;
+  margin: 0 20px 20px 20px; }
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  height: 90px;
+  margin: 0; }
+  footer h4 {
+    margin: inherit;
+    color: white;
+    padding-left: 30px;
+    font-weight: normal; }
+
+.eggcarton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .eggcarton h1, .eggcarton h3, .eggcarton h3 {
+    color: white;
+    font-weight: normal;
+    margin: 0; }
+  .eggcarton h3 {
+    font-size: 24px;
+    margin-top: 5%; }
+
+.eggimage {
+  width: 50%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-top: 20px; }
+  .eggimage img {
+    width: 85%;
+    margin-bottom: 2rem; }
+
+#hardboiled {
+  background-color: #ec7471; }
+
+#softboiled {
+  background-color: #93dc88; }
+
+#sunnysideup {
+  background-color: #85cdf4; }
+
+#poached {
+  background-color: #c097cc; }
+
+#overeasy {
+  background-color: #2bcbc5; }
+
+#overhard {
+  background-color: #f3bfb9; }
+
+#scrambled {
+  background-color: #e3d578; }
+
+#omelette {
+  background-color: #7191e4; }
+
+@media screen and (max-width: 900px) {
+  .eggcarton {
+    flex-direction: column; }
+
+  .eggimage {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

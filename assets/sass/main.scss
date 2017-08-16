@@ -1,0 +1,119 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import 'nav';
+@mixin flexcenter ($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-family: 'Droid Serif', serif;
+  font-style:italic;
+  text-align: center;
+  color: white;
+  padding: 0 3rem 2rem 3rem;
+  margin: 0 20px 20px 20px;
+
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  height: 90px;
+  margin:0;
+  h4 {
+    margin: inherit;
+    color: white;
+    padding-left: 30px;
+    font-weight: normal;
+  }
+}
+.eggcarton {
+  @include flexcenter(row);
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+
+  h1, h3 {
+    color:white;
+    font-weight: normal;
+    margin: 0;
+
+  }
+
+  h3 {
+    @extend h1;
+    font-size: 24px;
+    margin-top: 5%;
+
+  }
+
+}
+
+
+.eggimage {
+  width: 50%;
+  margin: 0;
+  @include flexcenter(column);
+  height:500px;
+  padding-top: 20px;
+
+  img {
+    width: 85%;
+    margin-bottom: 2rem;
+
+  }
+}
+#hardboiled {
+  background-color: #ec7471;
+}
+
+#softboiled {
+  background-color: #93dc88;
+}
+
+#sunnysideup{
+  background-color: #85cdf4;
+
+}
+
+#poached {
+  background-color: #c097cc;
+}
+
+#overeasy {
+  background-color: #2bcbc5;
+}
+
+#overhard {
+  background-color: #f3bfb9;
+}
+
+
+#scrambled {
+  background-color: #e3d578;
+}
+
+#omelette {
+  background-color: #7191e4;
+}
+
+
+@media screen and (max-width: 900px) {
+  .eggcarton {
+    flex-direction: column;
+  }
+  .eggimage {
+    width: 100%;
+  }
+}
